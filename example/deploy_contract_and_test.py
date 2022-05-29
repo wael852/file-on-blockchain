@@ -25,7 +25,7 @@ contract Greeter {
 rpc_url = "http://localhost:8545"
 w3 = Web3(HTTPProvider(rpc_url))
 # w3 = Web3(IPCProvider("./chain-data/geth.ipc"))
-w3.personal.unlockAccount(w3.eth.accounts[0], "test", 0)
+w3.geth.personal.unlockAccount(w3.eth.accounts[0], "test", 0)
 
 
 # Compile
